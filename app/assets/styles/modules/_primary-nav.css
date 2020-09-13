@@ -19,8 +19,8 @@
     li {
         list-style: none;
         display: inline-block;
-        padding-right: 7px;
-        @mixin atMedium {
+        padding:3px 7px;
+        @mixin atMedium { 
             padding-right: 20px;
             padding-top: 12px;
             float: left;
@@ -46,7 +46,7 @@
         @mixin atMedium {
             font-size: 1rem;
             padding: 12px 0;
-            background-color: transparent;
+            background-color: transparent; 
         }
     }
 }
