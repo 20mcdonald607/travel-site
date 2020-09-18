@@ -1,3 +1,9 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     font-family: 'Robato', sans-serif;
     color:#333;
