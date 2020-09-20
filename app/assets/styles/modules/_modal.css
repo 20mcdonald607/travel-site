@@ -1,0 +1,59 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.94);
+    z-index: 5;
+    display: flex;
+    transition: all .3s ease-out;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    &__inner {
+        flex: 1;
+        margin: auto;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 2rem;
+        color: $mainBlue;
+        transform: scaleX(1.2);
+        -webkit-transform: scaleX(1.2);
+        -moz-transform: scaleX(1.2);
+        -ms-transform: scaleX(1.2);
+        -o-transform: scaleX(1.2);
+        transform-origin: 100% 0;
+        cursor: pointer;
+
+        &:hover {
+            color: $mainOrange;
+        }
+    }
+}
